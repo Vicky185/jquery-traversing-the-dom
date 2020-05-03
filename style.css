@@ -1,55 +1,59 @@
-body{
+body {
 	font-family: 'Roboto', sans-serif;
- 	background-color: #eee;
+	background-color: #eee;
 }
 
-h1{
+h1 {
 	font-size: 3em;
 	text-align: center;
 }
-h2{
+
+h2 {
 	font-size: 1em;
 	text-align: left;
 }
-p{
+
+p {
 	font-size: .9rem;
 }
 
-div{
+div {
 	border-radius: 4px;
 }
 
-.card_image{
+.card_image {
 	width: 100%;
 }
 
-.bottom_button{
+.bottom_button {
 	display: flex;
 	box-sizing: border-box;
 	border-radius: 4px;
 	display: block;
 	width: 100%;
-	background-color: rgba(129, 187, 201,.85);
+	background-color: rgba(129, 187, 201, .85);
 	text-align: center;
 	padding: 1em .75em;
 	text-decoration: none;
 	color: #fff;
 }
 
-.card_bottom{
+.card_bottom {
 	display: flex;
 	flex-flow: column;
 }
 
-.card_head{
+.card_head {
 	flex: 0;
 }
 
-.card_para{
+.card_para {
 	flex: 1 0 auto;
+	display: none;
 }
 
-#container{
+
+#container {
 	display: flex;
 	flex-flow: row wrap;
 	box-sizing: border-box;
@@ -58,12 +62,12 @@ div{
 	max-width: 1050px;
 }
 
-#logo{
+#logo {
 	width: 800px;
 	margin: auto;
 }
 
-.card{
+.card {
 	flex: 1;
 	display: flex;
 	flex-flow: column;
@@ -73,11 +77,17 @@ div{
 	background-color: #fff;
 }
 
-#my_footer{
+.highlight {
+	background-color: pink;
+}
+
+
+#my_footer {
 	width: 100%;
 	text-align: center;
 }
-#copyright{
+
+#copyright {
 	margin-top: 10px;
 	margin-bottom: 10px;
 
@@ -87,24 +97,25 @@ div{
 Navigation
 **************************/
 
-nav{
+nav {
 	font-family: roboto;
 	background-color: #eee;
 	margin: 30px auto;
 	width: 100%;
 }
 
-ul{
+ul {
 	display: flex;
 	justify-content: space-between;
 	flex-flow: row;
 	align-items: baseline;
 	border-radius: 10px;
-	list-style-type: none; /*Remove Bullets*/
+	list-style-type: none;
+	/*Remove Bullets*/
 	padding: 0;
 }
 
-li{
+li {
 	flex: 1;
 	height: 30px;
 	font-family: Dosis;
@@ -113,36 +124,37 @@ li{
 	font-size: 1.3em;
 }
 
-#logoNav{
+#logoNav {
 	flex: 6;
 	text-align: left;
 	font-size: 2em;
 	font-weight: bold;
 }
 
-.underline{
+.underline {
 	text-decoration: underline;
 }
 
-.border{
+.border {
 	border: solid 5px #ccc;
 }
 
-.stream-nav{
+.stream-nav {
 	cursor: pointer;
 }
 
-.card-highlight{
+.card-highlight {
 	background-color: rgb(235, 82, 85);
 }
 
 /*for desktop navigation*/
-@media screen and (max-width: 700px){
-	ul{
+
+@media screen and (max-width: 700px) {
+	ul {
 		flex-flow: column;
-		align-items:center;
+		align-items: center;
 	}
-	li{
+	li {
 		font-size: 2em;
 	}
 }
